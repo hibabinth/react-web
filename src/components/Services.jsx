@@ -104,18 +104,22 @@ const Services = () => {
                   ))}
 
                   {/* Bottom Right Graphic - "Your Order ?" Speech Bubble */}
-                  <div className="absolute bottom-8 right-8 flex flex-col items-end pointer-events-auto group">
-                     {/* Bubble */}
-                     <div className="bg-navy text-cream font-sans text-lg md:text-xl font-medium px-6 py-3 rounded-2xl rounded-br-sm relative shadow-sm cursor-pointer group-hover:-translate-y-1 transition-transform">
-                        Your Order ?
-                     </div>
-                     {/* Floating cursor pointing up at bubble */}
-                     <div className="mt-2 w-[40px] h-[40px] mr-2 -translate-x-4 translate-y-2 group-hover:animate-bounce cursor-pointer">
-                        <svg viewBox="0 0 100 100" className="w-full h-full stroke-navy fill-cream stroke-[6px]" style={{transform: "rotate(-20deg)"}}>
-                           <polygon points="30,20 30,80 50,60 65,90 80,80 65,50 90,45" strokeLinejoin="round" />
-                        </svg>
-                     </div>
-                  </div>
+                  <a
+                    href="#order"
+                    className="absolute bottom-8 right-8 flex flex-col items-end pointer-events-auto group"
+                    aria-label="Go to contact form"
+                  >
+                    {/* Bubble */}
+                    <div className="bg-navy text-cream font-sans text-lg md:text-xl font-medium px-6 py-3 rounded-2xl rounded-br-sm relative shadow-sm cursor-pointer group-hover:-translate-y-1 transition-transform">
+                      Your Order ?
+                    </div>
+                    {/* Floating cursor pointing up at bubble */}
+                    <div className="mt-2 w-[40px] h-[40px] mr-2 -translate-x-4 translate-y-2 group-hover:animate-bounce cursor-pointer">
+                      <svg viewBox="0 0 100 100" className="w-full h-full stroke-navy fill-cream stroke-[6px]" style={{ transform: "rotate(-20deg)" }}>
+                        <polygon points="30,20 30,80 50,60 65,90 80,80 65,50 90,45" strokeLinejoin="round" />
+                      </svg>
+                    </div>
+                  </a>
                </div>
 
             </div>
