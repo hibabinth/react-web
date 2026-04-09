@@ -1,22 +1,20 @@
 import React from 'react';
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import Services from './components/Services';
-import Works from './components/Works';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
+import LandingPage from './pages/LandingPage';
+import Site from './pages/Site';
+import Site8 from './pages/Site8';
 
 function App() {
-  return (
-    <div className="w-full min-h-screen flex flex-col">
-      <Navbar />
-      <Hero />
-      <Services />
-      <Works />
-      <Contact />
-      <Footer />
-    </div>
-  );
+  const path = window.location.pathname.toLowerCase();
+
+  if (path === '/site') {
+    return <Site />;
+  }
+
+  if (path === '/site8') {
+    return <Site8 />;
+  }
+
+  return <LandingPage />;
 }
 
 export default App;

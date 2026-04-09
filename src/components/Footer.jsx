@@ -19,28 +19,16 @@ const Footer = () => {
           </svg>
         </div>
 
-        {/* Top-Left Hanging Sign */}
-        <div className="absolute top-[-60px] left-[5%] hidden md:flex flex-col items-center">
-          {/* Ropes / Wires */}
-          <div className="flex justify-between w-[80%] absolute top-[-30px] z-[-1]">
-             <div className="h-[60px] w-[3px] bg-navy"></div>
-             <div className="h-[60px] w-[3px] bg-navy"></div>
-          </div>
-          <div className="border-[3px] border-navy bg-cream px-4 py-2 font-black text-2xl tracking-tighter">
-            seventy two<span className="font-serif italic font-normal ml-1">mg.</span>
-          </div>
-        </div>
-
         {/* Content Section */}
         <div className="mt-20 md:mt-16 w-full flex flex-col items-center z-10 px-4">
           <h3 className="text-4xl md:text-5xl font-serif italic text-navy font-thin">visit us again</h3>
           
-          {/* Big Name with Dashed Lines */}
+          {/* Separator with message */}
           <div className="flex flex-col items-center mt-12 w-full max-w-4xl px-4 md:px-12">
              <div className="w-full border-t-[4px] border-dashed border-navy h-0"></div>
-             <h2 className="my-8 text-[3.5rem] md:text-[5.5rem] font-black text-navy tracking-tighter leading-none text-center">
-                seventy two <span className="font-serif italic font-medium -ml-3 md:-ml-5 text-[2.5rem] md:text-[4.5rem]">mg.</span>
-             </h2>
+             <p className="my-8 text-center text-xl md:text-3xl font-medium text-navy tracking-tight">
+               Thanks for visiting
+             </p>
              <div className="w-full border-t-[4px] border-dashed border-navy h-0"></div>
           </div>
 

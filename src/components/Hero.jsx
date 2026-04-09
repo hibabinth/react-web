@@ -2,7 +2,7 @@ import React from 'react';
 
 const Hero = () => {
   return (
-    <section className="relative w-full min-h-[850px] h-screen bg-cream text-navy overflow-hidden font-sans border-b-[4px] border-navy">
+    <section className="relative w-full min-h-[740px] h-[100svh] bg-cream text-navy overflow-hidden font-sans border-b-[4px] border-navy">
       
       {/* 3D Room Lines (Responsive Full Screen SVG) */}
       <svg className="absolute inset-0 w-full h-full pointer-events-none z-0" preserveAspectRatio="none">
@@ -17,8 +17,8 @@ const Hero = () => {
       </svg>
 
       {/* Window on the Left Wall */}
-      <div className="absolute top-[45%] left-[2%] w-[8%] h-[25%] pointer-events-none z-0 hidden sm:block">
-          <svg width="100%" height="100%" viewBox="0 0 100 200" preserveAspectRatio="none" className="stroke-navy fill-none stroke-[4px]">
+      <div className="absolute top-[44%] left-[3%] w-[20%] h-[24%] sm:top-[40%] sm:left-[1.5%] sm:w-[12%] sm:h-[34%] pointer-events-none z-0 block">
+          <svg width="100%" height="100%" viewBox="0 0 100 200" preserveAspectRatio="none" className="stroke-navy fill-none stroke-[4.5px]">
              {/* Outer Frame (Perspective Distorted) */}
              <path d="M 10,30 L 90,0 L 90,200 L 10,170 Z" strokeLinejoin="round" />
              <path d="M 20,40 L 80,17 L 80,183 L 20,160 Z" strokeLinejoin="round" />
@@ -29,8 +29,8 @@ const Hero = () => {
       </div>
 
       {/* Hanging Lamp - Top Right */}
-      <div className="absolute top-[0] right-[5%] w-[80px] h-[250px] pointer-events-none z-10 hidden md:block">
-         <svg viewBox="0 0 100 300" className="w-full h-full stroke-navy fill-cream stroke-[3px]">
+      <div className="absolute top-[0] right-[4.5%] w-[52px] h-[170px] md:w-[92px] md:h-[285px] pointer-events-none z-10 block">
+         <svg viewBox="0 0 100 300" className="w-full h-full stroke-navy fill-cream stroke-[3.2px]">
             {/* Cord */}
             <line x1="50" y1="0" x2="50" y2="230" />
             {/* Lampshade */}
@@ -46,8 +46,8 @@ const Hero = () => {
       </div>
 
       {/* Shelf and Gramophone - Mid Right */}
-      <div className="absolute top-[50%] right-[3%] w-[200px] h-[160px] pointer-events-none z-10 hidden lg:block">
-         <svg viewBox="0 0 250 200" className="w-full h-full stroke-navy stroke-[3px] fill-cream">
+      <div className="absolute top-[47%] right-[3%] w-[120px] h-[96px] sm:w-[170px] sm:h-[130px] lg:top-[45%] lg:right-[1.5%] lg:w-[290px] lg:h-[220px] pointer-events-none z-10 block">
+         <svg viewBox="0 0 250 200" className="w-full h-full stroke-navy stroke-[3.2px] fill-cream">
             {/* Musical Notes (floating above) */}
             <path d="M 100,20 Q 110,10 115,25 Q 120,40 105,45 Z" fill="#002468" stroke="none" />
             <path d="M 125,40 Q 135,30 140,45 Q 145,60 130,65 Z" fill="#002468" stroke="none" />
@@ -76,8 +76,8 @@ const Hero = () => {
       </div>
 
       {/* Table, Chairs & Moka Pot - Bottom Center Left */}
-      <div className="absolute bottom-[-2%] left-[10%] w-[400px] h-[280px] pointer-events-none z-10 hidden md:block">
-         <svg viewBox="0 0 500 350" className="w-full h-full stroke-navy stroke-[3px] fill-cream">
+      <div className="absolute bottom-[2%] left-[8%] w-[210px] h-[145px] sm:w-[300px] sm:h-[210px] md:bottom-[-2%] md:left-[10%] md:w-[540px] md:h-[375px] pointer-events-none z-10 block">
+         <svg viewBox="0 0 500 350" className="w-full h-full stroke-navy stroke-[3.2px] fill-cream">
             {/* Left Chair */}
             <g transform="translate(10, 60)">
                <path d="M 80,120 C 60,80 100,80 80,120 Z" fill="none" strokeWidth="2" />
@@ -123,24 +123,27 @@ const Hero = () => {
 
       {/* Center Typography & Floating "lets brew" Button */}
       <div className="absolute top-[18%] md:top-[15%] left-0 right-0 flex flex-col items-center px-4 z-20 pointer-events-auto">
-        <h1 className="max-w-[95%] md:max-w-[70%] text-[3rem] md:text-[5rem] lg:text-[6rem] font-sans font-normal text-navy text-center tracking-tight leading-[1.05]">
+        <h1 className="max-w-[95%] md:max-w-[74%] text-[1.95rem] md:text-[3.3rem] lg:text-[4.2rem] font-sans font-normal text-navy text-center tracking-tight leading-[1.08]">
           You <span className="font-serif italic font-normal lowercase tracking-normal">deserve</span> more than,<br />
           instant coffee <span className="font-serif italic font-normal lowercase tracking-normal">creativity</span>
         </h1>
-        <p className="text-xl md:text-[1.3rem] font-sans text-navy/80 font-medium text-center mt-6 tracking-tight max-w-2xl leading-snug">
+        <p className="text-[0.98rem] md:text-[1.15rem] font-sans text-navy/80 font-medium text-center mt-4 tracking-tight max-w-xl leading-snug">
           Our process takes a little more time and care, but the results?<br />
           Worth every sip. (And no, we're not talking about coffee.)
         </p>
 
         {/* Floating Button Assembly - Positioned higher to ensure it sits safely above the table */}
-        <div className="mt-8 md:mt-12 relative flex flex-col items-center group cursor-pointer z-30 pointer-events-auto">
+        <div className="mt-6 md:mt-8 relative flex flex-col items-center group cursor-pointer z-30 pointer-events-auto">
            <svg width="40" height="20" viewBox="0 0 40 20" className="absolute top-[-18px] stroke-navy fill-none stroke-[3px] pointer-events-none">
               <path d="M0,20 L20,5 L40,20" strokeLinecap="round" strokeLinejoin="round" />
               <circle cx="20" cy="5" r="4" className="fill-cream" />
            </svg>
-           <button className="bg-navy text-cream px-10 py-3 rounded-full text-lg md:text-2xl font-bold font-sans tracking-wide hover:-translate-y-[2px] transition-transform shadow-[4px_4px_0_0_rgba(0,36,104,0.1)]">
+           <a
+             href="#order"
+             className="bg-navy text-cream px-6 py-2 rounded-full text-sm md:text-lg font-bold font-sans tracking-wide hover:-translate-y-[2px] transition-transform shadow-[4px_4px_0_0_rgba(0,36,104,0.1)]"
+           >
               lets brew
-           </button>
+           </a>
         </div>
       </div>
 
