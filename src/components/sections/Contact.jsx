@@ -13,7 +13,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="order" className="w-full bg-cream py-10 md:py-20 px-3 md:px-8 text-navy relative overflow-hidden font-sans scroll-mt-24 md:scroll-mt-28">
+    <section id="contact" className="w-full bg-cream py-10 md:py-20 px-3 md:px-8 text-navy relative overflow-hidden font-sans scroll-mt-24 md:scroll-mt-28">
 
       <div className="max-w-5xl mx-auto relative mt-3 md:mt-10">
         
