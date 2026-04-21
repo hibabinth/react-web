@@ -36,7 +36,7 @@ const Footer = () => {
           <div className="flex gap-6 md:gap-10 mt-12 text-xl md:text-2xl font-light">
             <a href="#menu" className="hover:underline underline-offset-4 decoration-2">Services</a>
             <a href="#works" className="hover:underline underline-offset-4 decoration-2">Works</a>
-            <a href="#order" className="hover:underline underline-offset-4 decoration-2">Contact Us</a>
+            <a href="#contact" className="hover:underline underline-offset-4 decoration-2">Contact Us</a>
           </div>
 
           {/* Social Icons */}
@@ -71,13 +71,13 @@ const Footer = () => {
                {/* Handle */}
                <path d="M80,45 C95,45 95,65 75,70" fill="none" strokeWidth="3" strokeLinecap="round" />
                {/* Cute face */}
-               <ellipse cx="40" cy="55" rx="3" ry="5" fill="#002468" className="stroke-none" />
-               <ellipse cx="60" cy="55" rx="3" ry="5" fill="#002468" className="stroke-none" />
+               <ellipse cx="40" cy="55" rx="3" ry="5" fill="rgb(0, 36, 104)" className="stroke-none" />
+               <ellipse cx="60" cy="55" rx="3" ry="5" fill="rgb(0, 36, 104)" className="stroke-none" />
                <path d="M47,65 Q50,70 53,65" fill="none" strokeWidth="2" strokeLinecap="round" />
                {/* Skateboard / Wheels below */}
                <path d="M10,95 L90,95" fill="none" strokeWidth="3" strokeLinecap="round" />
-               <circle cx="25" cy="105" r="4" fill="#002468" className="stroke-none" />
-               <circle cx="75" cy="105" r="4" fill="#002468" className="stroke-none" />
+               <circle cx="25" cy="105" r="4" fill="rgb(0, 36, 104)" className="stroke-none" />
+               <circle cx="75" cy="105" r="4" fill="rgb(0, 36, 104)" className="stroke-none" />
             </svg>
         </div>
 

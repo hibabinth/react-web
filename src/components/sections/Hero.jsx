@@ -7,13 +7,13 @@ const Hero = () => {
       {/* 3D Room Lines (Responsive Full Screen SVG) */}
       <svg className="absolute inset-0 w-full h-full pointer-events-none z-0" preserveAspectRatio="none">
          {/* Corner Line */}
-         <line x1="20%" y1="0" x2="20%" y2="80%" stroke="#002468" strokeWidth="4" />
+         <line x1="20%" y1="0" x2="20%" y2="80%" stroke="rgb(0, 36, 104)" strokeWidth="4" />
          {/* Floor Diagonal */}
-         <line x1="20%" y1="80%" x2="0" y2="100%" stroke="#002468" strokeWidth="4" />
+         <line x1="20%" y1="80%" x2="0" y2="100%" stroke="rgb(0, 36, 104)" strokeWidth="4" />
          {/* Baseboard */}
-         <line x1="20%" y1="80%" x2="100%" y2="80%" stroke="#002468" strokeWidth="4" />
+         <line x1="20%" y1="80%" x2="100%" y2="80%" stroke="rgb(0, 36, 104)" strokeWidth="4" />
          {/* Lower Floor Line */}
-         <line x1="10%" y1="90%" x2="100%" y2="90%" stroke="#002468" strokeWidth="4" />
+         <line x1="10%" y1="90%" x2="100%" y2="90%" stroke="rgb(0, 36, 104)" strokeWidth="4" />
       </svg>
 
       {/* Window on the Left Wall */}
@@ -49,9 +49,9 @@ const Hero = () => {
       <div className="absolute top-[47%] right-[3%] w-[120px] h-[96px] sm:w-[170px] sm:h-[130px] lg:top-[45%] lg:right-[1.5%] lg:w-[290px] lg:h-[220px] pointer-events-none z-10 block">
          <svg viewBox="0 0 250 200" className="w-full h-full stroke-navy stroke-[3.2px] fill-cream">
             {/* Musical Notes (floating above) */}
-            <path d="M 100,20 Q 110,10 115,25 Q 120,40 105,45 Z" fill="#002468" stroke="none" />
-            <path d="M 125,40 Q 135,30 140,45 Q 145,60 130,65 Z" fill="#002468" stroke="none" />
-            <path d="M 80,60 Q 90,50 95,65 Q 100,80 85,85 Z" fill="#002468" stroke="none" />
+            <path d="M 100,20 Q 110,10 115,25 Q 120,40 105,45 Z" fill="rgb(0, 36, 104)" stroke="none" />
+            <path d="M 125,40 Q 135,30 140,45 Q 145,60 130,65 Z" fill="rgb(0, 36, 104)" stroke="none" />
+            <path d="M 80,60 Q 90,50 95,65 Q 100,80 85,85 Z" fill="rgb(0, 36, 104)" stroke="none" />
             <line x1="110" y1="15" x2="120" y2="5" />
             <line x1="135" y1="35" x2="145" y2="25" />
             <line x1="90" y1="55" x2="100" y2="45" />
@@ -139,7 +139,7 @@ const Hero = () => {
               <circle cx="20" cy="5" r="4" className="fill-cream" />
            </svg>
            <a
-             href="#order"
+             href="#contact"
              className="bg-navy text-cream px-6 py-2 rounded-full text-sm md:text-lg font-bold font-sans tracking-wide hover:-translate-y-[2px] transition-transform shadow-[4px_4px_0_0_rgba(0,36,104,0.1)]"
            >
               lets brew
