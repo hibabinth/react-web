@@ -8,7 +8,7 @@ export default {
     extend: {
       colors: {
         cream: "#F2ECE4",
-        navy: "#002147",
+        navy: "rgb(0, 36, 104)",
         accent: "#7e6d5e", // Supporting tone
       },
       fontFamily: {
